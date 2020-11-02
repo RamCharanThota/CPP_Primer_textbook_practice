@@ -1,0 +1,36 @@
+// strtype1.cpp -- using the C++ string class
+#include <iostream>
+#include <string>
+// make string class available
+int main()
+{
+using namespace std;
+char charr1[20];
+// create an empty array
+char charr2[20] = "char2"; // create an initialized array
+string str1;
+// create an empty string object
+string str2 = "string2";
+// create an initialized string
+cout << "Enter a kind of char1: ";
+cin >> charr1;
+cout << "Enter another kind of string1: ";
+cin >> str1;
+// use cin for input
+//str2=str1;
+//charr2=charr1;//invalid assignment
+cout << "Here are some list:\n";
+cout << charr1 << " " << charr2 << " "
+<< str1 << " " << str2 // use cout for output
+<< endl;
+cout << "The third letter in " << charr2 << " is "
+<< charr2[2] << endl;
+cout << "The third letter in " << str2 << " is "
+<< str2[2] << endl;
+// use array notation
+//string concatenation example
+str1+=str2;
+cout<< "the concatenated string string1 is :" ;
+cout << str1<< endl;
+return 0;
+}
